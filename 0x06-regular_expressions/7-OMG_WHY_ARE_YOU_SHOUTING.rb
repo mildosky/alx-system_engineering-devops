@@ -1,2 +1,7 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/[A-Z]*/).join
+if ARGV.length > 0
+    for m in ARGV[0].scan(/[A-Z]/)
+	print m
+    end
+    puts
+end
