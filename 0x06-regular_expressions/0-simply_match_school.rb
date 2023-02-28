@@ -1,2 +1,8 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/Holberton/).join
+if ARGV.length > 0
+    for m in ARGV[0].scan(/School/)
+	print m
+	STDOUT.flush
+    end
+    puts 
+end
